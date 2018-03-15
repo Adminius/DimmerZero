@@ -4,16 +4,16 @@
 
 |timer    | channel  | recommended pin | alternative pins |
 |:--------|:---------|:----------------|:-----------------|
-|	Timer0	|	0	|	2	|	A3	|
-|	Timer0	|	1	|	5	|	A4	|
-|	Timer0	|	2	|	6	|	10	|
-|	Timer0	|	3	|	7	|	12	|
+|	Timer0	|	0	|	2 (PA14) |	A3	(PA04) |
+|	Timer0	|	1	|	5	(PA15) |	A4	(PA05) |
+|	Timer0	|	2	|	6	(PA20) |	10	(PA18) |
+|	Timer0	|	3	|	7	(PA21) |	12	(PA19) |
 |	|	|	|
-|	Timer1	|	0	|	4	|	1, 8	|
-|	Timer1	|	1	|	3	|	0, 9	|
+|	Timer1	|	0	|	4	(PA08) |	1 (PA11), 8	(PA06) |
+|	Timer1	|	1	|	3	(PA09) |	0 (PA10), 9	(PA07) |
 |	|	|	|
-|	Timer2	|	0	|	6	|	11	|
-|	Timer2	|	1	|	7	|	13	|
+|	Timer2	|	0	|	11 (PA16) |	6	(PA20) |
+|	Timer2	|	1	|	13 (PA17) |	7	(PA21) |
 
 Listed pins are for Arduino Zero. On Arduino M0 (Pro) pins 2 and 4 are reversed!
 
@@ -22,11 +22,11 @@ Listed pins are for Arduino Zero. On Arduino M0 (Pro) pins 2 and 4 are reversed!
 Create an instance:
 normal mode (0 to max)
 
-**DimmerSAMD channel1(pinnumber);** 
+**DimmerZero channel1(pinnumber);** 
 
 or inverted mode (max to 0)
 
-**DimmerSAMD channel2(pinnumber, true);**
+**DimmerZero channel2(pinnumber, true);**
 
 Initialization instances:
 channel1.init();
