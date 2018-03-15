@@ -2,7 +2,7 @@
 
 ##### Supported pwm pins (only one pin on the same channel is supported, e.g. 6 or 11):
 
-|timer    | channel  | recommendet pin | alternative pins |
+|timer    | channel  | recommended pin | alternative pins |
 |:--------|:---------|:----------------|:-----------------|
 |	Timer0	|	0	|	2	|	A3	|
 |	Timer0	|	1	|	5	|	A4	|
